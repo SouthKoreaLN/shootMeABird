@@ -89,10 +89,10 @@ def image_request():
     try:
         print(f"{thing} {model} {truncation}")
         filename = generate_image(thing=thing, model_name=model, truncation=float(truncation))
+        return send_file(filename, mimetype="image/png")
     except:
         traceback.print_exc()
         return make_response(("Can't generate image", 502))
-    return send_file(filename, mimetype="image/png")
 
 if __name__ == "__main__":
     # Need to generate BigGAN first, otherwise waifu exhausts the GPU
