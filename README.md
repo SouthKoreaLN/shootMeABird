@@ -16,4 +16,8 @@ Once he pays, the bot querries the GAN generator API to return us an image of th
 
 # GAN Info
 
-Uses BigGAN from https://github.com/huggingface/pytorch-pretrained-BigGAN.git
+Uses BigGAN from
+https://github.com/huggingface/pytorch-pretrained-BigGAN.git and
+styleGAN https://github.com/NVlabs/stylegan with Gwern's
+ThisWaifuDoesNotExist model. Need to link the config/ and dnnlib/ from
+styleGAN into the GAN/ directory.
