@@ -3,8 +3,10 @@
 We build this tool as a telegram bot (t.me/shootMeABirdBot).
 
 The user can type any of the following commands to interact with the bot:
-- /bop
-- /waifu
+- /test
+- /request_waifu
+- /get_waifu
+- ...
 
 The latter command will ask the user to type the name of any object he would like to get an image of.
 
