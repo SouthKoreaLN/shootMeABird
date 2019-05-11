@@ -6,9 +6,12 @@ from quart import Quart, send_file, request, make_response
 
 app = Quart(__name__)
 
-models = { "biggan-deep-512" : BigGAN.from_pretrained('biggan-deep-512') }
+models = {
+    "biggan-deep-512" : BigGAN.from_pretrained('biggan-deep-512'),
+    "biggan-deep-256" : BigGAN.from_pretrained('biggan-deep-256')
+}
 
-def get_model(name="biggan-deep-512"):
+def get_model(name="biggan-deep-256"):
     "Get the deep model from known models"
     return models[name]
 
